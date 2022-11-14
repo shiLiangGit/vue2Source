@@ -6,8 +6,14 @@
 </head>
 <script src="../dist/bundle.js"></script>
 <body>
+    <div id="app">
+        <span>{{name}}</span>
+        <span>{{age}}</span>
+    </div>
+</body>
 <script>
     let vm = new Vue({
+        el: '#app', // 挂着 data数据到dom模板
         data () {
             return {
                 name: '张三',
@@ -27,5 +33,4 @@
     vm.arr.push({b:45},6, [55]);
     console.log(vm.arr)
 </script>
-</body>
 </html>

@@ -1,5 +1,4 @@
 import newArrayProto from "./array";
-import {re} from "@babel/core/lib/vendor/import-meta-resolve";
 function Observe(data) {
     if (data instanceof Array) { // 如果是数组
         Object.defineProperty(data, '_ob_', {
